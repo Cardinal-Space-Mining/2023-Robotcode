@@ -1,0 +1,13 @@
+Mining Control To-Do List:
+- DONE, TEST: Increase safeguards for trencher
+Using failure data as a reference, set a limit on the maximum (power? current?) that can be commanded to the trencher motor, regardless of auto or manual operation mode.
+
+- Set hopper indexing to stop at a certain point
+Could do hopper encoder ticks, or perhaps stop once trencher has passed a certain angle? Or both (angle first, then ticks)
+
+- DONE, TEST: Get trencher/sector control using a running average of reported current values rather than every single point
+
+- Introduce some sort of timing cutoff for plunging - this could trigger the sector to lift slightly, then restart plunge
+
+- IN PROGRESS: Clean/restructure code
+TODO: Collection system commands (consult Erik)
